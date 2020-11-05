@@ -21,6 +21,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
+    list-style-type: none;
 }
 
 .line1,
@@ -36,7 +37,6 @@ nav {
 a {
     text-decoration: none;
     color: black;
-    list-style: none;
     font-size: 22px;
     color: white;
 }
