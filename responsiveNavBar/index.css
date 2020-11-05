@@ -24,21 +24,12 @@ nav {
     list-style-type: none;
 }
 
-.line1,
-.line2,
-.line3 {
-    height: 5px;
-    width: 30px;
-    background: black;
-    margin: 4px;
-    display: none;
-}
-
 a {
     text-decoration: none;
     color: black;
-    font-size: 22px;
-    color: white;
+    font-size: 1.4rem;
+    color: black;
+    padding: 5px;
 }
 
 .bodyy {
@@ -59,4 +50,41 @@ footer {
     justify-content: center;
     align-items: center;
     color: black;
+}
+
+@media screen and (max-width:760px) {
+
+    .line1,
+    .line2,
+    .line3 {
+        height: 4px;
+        width: 30px;
+        background: White;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+        z-index: 4;
+    }
+
+    .hamb {
+        position: absolute;
+        cursor: pointer;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+
+
+    .links.open {
+        position: fixed;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background: rgb(43, 255, 0);
+        clip-path: circle(900px at 90% -10%);
+        transition: all 1.2s ease;
+    }
 }
