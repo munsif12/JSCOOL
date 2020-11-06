@@ -77,7 +77,6 @@ footer {
         z-index: 5;
     }
 
-
     .links.open {
         position: fixed;
         flex-direction: column;
